@@ -13,7 +13,8 @@
 <meta property="og:image" content="https://namyounghee.github.io/assets/og.jpg">
 <meta property="og:url" content="https://namyounghee.github.io/">
 <meta name="theme-color" content="#0F4A30">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +51,11 @@ h2.title{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(28px,
 header{position:sticky;top:0;z-index:50;background:rgba(244,247,243,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:.3s}
 header.scrolled{border-bottom-color:var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.nav .logo img{height:38px;width:auto}
+.nav .logo{display:flex;align-items:center;gap:10px}
+.nav .logo img{height:46px;width:46px}
+.logo-txt{display:flex;flex-direction:column;line-height:1.15}
+.logo-txt b{font-size:18px;font-weight:800;color:var(--green);letter-spacing:-.01em}
+.logo-txt small{font-size:11.5px;color:var(--muted);font-weight:500;margin-top:2px}
 .nav ul{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:500;color:#33443b}
 .nav ul a{position:relative;padding:4px 0}
 .nav ul a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--green);transition:.25s}
@@ -204,6 +209,7 @@ header.scrolled{border-bottom-color:var(--line)}
 .final{padding:0 0 110px}
 .final-box{background:var(--green);border-radius:36px;padding:80px 40px;text-align:center;color:#dce8d2;position:relative;overflow:hidden}
 .final-box::before{content:"";position:absolute;inset:auto -80px -160px auto;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(213,228,190,.25),rgba(213,228,190,0) 70%)}
+.final-mark{display:block;width:84px;height:84px;margin:0 auto 18px;position:relative}
 .final-box h2{font-family:"Noto Serif KR",serif;font-size:clamp(26px,3.4vw,40px);color:#fff;line-height:1.5;font-weight:600}
 .final-box p{margin:18px auto 0;max-width:560px;font-size:16.5px}
 .final-box .cta{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:36px;position:relative}
@@ -212,7 +218,7 @@ header.scrolled{border-bottom-color:var(--line)}
 
 footer{border-top:1px solid var(--line);padding:50px 0 60px;font-size:13.5px;color:#7a877f}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px}
-footer img{height:34px;width:auto;margin-bottom:14px}
+footer img{height:96px;width:auto;margin-bottom:16px}
 footer .links{display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:500;color:#4b5a51}
 footer .links a:hover{color:var(--green)}
 
@@ -253,6 +259,7 @@ footer .links a:hover{color:var(--green)}
   .mobile-bar a{flex:1;padding:14px 10px;font-size:15px}
 }
 @media (max-width:600px){
+.logo-txt small{display:none}.nav .logo img{height:40px;width:40px}
   .trust{gap:18px}
   .trust div{flex:1 1 40%}
   .feel-grid{grid-template-columns:1fr}
@@ -315,7 +322,7 @@ footer .links a:hover{color:var(--green)}
 
 <header id="top">
   <nav class="nav wrap" aria-label="주 메뉴">
-    <a href="#top" class="logo" aria-label="RE:mind 코칭센터 처음으로"><img src="assets/logo-horizontal.png" alt="RE:mind 코칭센터"></a>
+    <a href="#top" class="logo" aria-label="RE:mind 코칭센터 처음으로"><img src="assets/logo-mark-96.png" alt="" width="48" height="48"><span class="logo-txt"><b>RE:mind</b><small>코칭센터 · 마음코치 남영희</small></span></a>
     <ul>
       <li><a href="#about">코치 소개</a></li>
       <li><a href="#programs">코칭 프로그램</a></li>
@@ -683,6 +690,7 @@ footer .links a:hover{color:var(--green)}
 <section class="final">
   <div class="wrap">
     <div class="final-box reveal">
+      <img class="final-mark" src="assets/logo-mark.png" alt="" width="84" height="84">
       <h2>지금 마음을 한 문장으로만<br>들고 오세요</h2>
       <p>정리되지 않아도, 거창하지 않아도 괜찮아요. 그 한 문장이면 충분합니다. 답을 찾아 걷는 사람은 당신이고, 저는 그 곁에서 끝까지 함께 걸을게요.</p>
       <div class="cta">
@@ -697,7 +705,7 @@ footer .links a:hover{color:var(--green)}
 <footer>
   <div class="wrap">
     <div>
-      <img src="assets/logo-horizontal.png" alt="RE:mind 코칭센터">
+      <img src="assets/logo-vertical.png" alt="RE:mind 코칭센터">
       <p>리마인드 코칭센터(RE:mind 코칭센터) · 대표 남영희<br>사업자등록번호 607-48-31062</p>
       <p style="margin-top:8px">© 2026 RE:mind 코칭센터. 모든 권리 보유.</p>
     </div>
