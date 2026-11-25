@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RE:mind 코칭센터 | 마음코치 남영희 · 1:1 라이프 코칭</title>
-<meta name="description" content="당신의 속도로, 원하는 삶에 닿도록. 스스로 고른 한 걸음이 일상의 변화로 이어지도록 돕는 마음코치 남영희의 1:1 라이프 코칭(ZOOM·전화 70분)과 코치 더 코치.">
+<meta name="description" content="당신의 속도로, 원하는 삶에 닿도록. 스스로 고른 한 걸음이 일상의 변화로 이어지도록 돕는 마음코치 남영희의 1:1 라이프 코칭(ZOOM·전화 70분), 엄마 감정 그룹코칭 RE:Birth, 코치 더 코치.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="RE:mind 코칭센터 | 마음코치 남영희">
 <meta property="og:description" content="당신의 속도로, 원하는 삶에 닿도록. 내가 찾은 답으로 변화를 이어 가는 1:1 라이프 코칭.">
@@ -287,6 +287,25 @@ footer .links a:hover{color:var(--green)}
 .wcard .ig b{display:block;font-size:15px;color:#fff}
 .wcard .ig span{display:block;font-size:13.5px;opacity:.85;line-height:1.55;margin-top:2px}
 .wcard .ig i{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-style:normal;font-weight:700;color:var(--sage)}
+
+.group{padding-top:0}
+.group-box{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;background:var(--sage-2);border-radius:28px;padding:46px 44px;border:1px solid #d9e6c8}
+.group-box .tag{display:inline-block;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:#fff;color:var(--green);margin:0 6px 6px 0}
+.group-box h3{font-family:"Noto Serif KR",serif;font-size:clamp(24px,2.6vw,30px);line-height:1.45;color:var(--green);margin:14px 0 12px}
+.group-box .desc{color:#4b5a51;font-size:15.5px}
+.g-steps{list-style:none;margin-top:22px;display:grid;gap:10px;counter-reset:gs}
+.g-steps li{counter-increment:gs;position:relative;padding:12px 16px 12px 52px;background:rgba(255,255,255,.7);border-radius:16px}
+.g-steps li::before{content:counter(gs);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:"Noto Serif KR",serif;font-weight:700;font-size:13px}
+.g-steps b{display:block;color:var(--green);font-size:15px}
+.g-steps span{font-size:14px;color:var(--muted)}
+.group-info{background:#fff;border-radius:22px;padding:30px 28px;display:flex;flex-direction:column;gap:10px;align-self:start}
+.group-info ul{list-style:none;border-top:1px solid var(--line)}
+.group-info li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.group-info li span{color:var(--muted);white-space:nowrap}
+.group-info li b{color:var(--green);text-align:right}
+.g-note{font-size:13.5px;color:var(--muted);margin:6px 0 8px}
+.group-info .btn{width:100%;justify-content:center}
+@media (max-width:980px){.group-box{grid-template-columns:1fr;padding:34px 24px;gap:26px}}
 </style>
 </head>
 <body>
@@ -297,6 +316,7 @@ footer .links a:hover{color:var(--green)}
     <ul>
       <li><a href="#about">코치 소개</a></li>
       <li><a href="#programs">코칭 프로그램</a></li>
+      <li><a href="#group">엄마 그룹코칭</a></li>
       <li><a href="#reviews">후기</a></li>
       <li><a href="#faq">자주 묻는 질문</a></li>
       <li><a href="#writing">글</a></li>
@@ -496,6 +516,35 @@ footer .links a:hover{color:var(--green)}
         <div class="step"><div class="dot">2</div><h4>나다운 기준 세우기</h4><p>가치와 강점을 탐색해, 흔들리지 않는 선택의 기준을 세워요.</p></div>
         <div class="step"><div class="dot">3</div><h4>작게 시작하기</h4><p>감정과 환경을 고려한 실행 계획, 방해 요인도 함께 다뤄요.</p></div>
         <div class="step"><div class="dot">4</div><h4>혼자서도 이어 가기</h4><p>해 본 것을 돌아보고, 코칭이 끝난 뒤에도 스스로 이어 갈 한 달 계획을 내 손으로 세워요.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 엄마 그룹코칭 -->
+<section class="group" id="group">
+  <div class="wrap">
+    <div class="group-box reveal">
+      <div class="group-text">
+        <div><span class="tag">RE:Birth Coaching</span><span class="tag">엄마들을 위한 그룹코칭</span></div>
+        <h3>좋은 엄마가 되려 애쓰다<br>나를 잊은 엄마들에게</h3>
+        <p class="desc">혼자 버텨 온 마음을 같은 자리의 엄마들과 꺼내 놓으면, '나만 그런 게 아니구나' 하고 숨이 쉬어져요. 그 숨으로 나에게 맞는 선택을 하나씩 해 보는 4주예요.</p>
+        <ol class="g-steps">
+          <li><b>알아차리기</b><span>화와 짜증 아래 숨은 나의 진짜 바람을 만나요.</span></li>
+          <li><b>다시 보기</b><span>'내가 왜 이럴까' 대신 '지금 내게 필요한 건 뭘까?'로 질문을 바꿔요.</span></li>
+          <li><b>내 자리 되찾기</b><span>내가 바라는 방향으로, 일상 속 작은 변화를 직접 골라 해 봐요.</span></li>
+        </ol>
+      </div>
+      <div class="group-info">
+        <ul>
+          <li><span>구성</span><b>사전 1:1 코칭 1회 + 그룹 코칭 4회</b></li>
+          <li><span>방식</span><b>ZOOM 온라인 · 기수당 5명</b></li>
+          <li><span>함께 드려요</span><b>RE:Birth 저널링 워크북</b></li>
+          <li><span>비용</span><b>1인 150,000원</b></li>
+        </ul>
+        <p class="g-note">기수별로 모집해요. 다음 기수 소식은 카카오톡 채널에서 가장 먼저 알려 드릴게요.</p>
+        <a class="btn btn-primary" href="https://pf.kakao.com/_BxjFNn/friend" target="_blank" rel="noopener">다음 기수 소식 받기 →</a>
+        <a class="btn btn-ghost" href="https://blog.naver.com/mindcoaching_123/224395090107" target="_blank" rel="noopener">지난 기수 이야기 보기</a>
       </div>
     </div>
   </div>
