@@ -280,6 +280,13 @@ footer .links a:hover{color:var(--green)}
 .loop::after{content:"↻";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#fff;border:1.5px solid var(--sage);display:grid;place-items:center;color:var(--green);font-size:26px;box-shadow:var(--shadow);pointer-events:none}
 @media (max-width:980px){.grow .wrap{grid-template-columns:1fr;gap:40px}}
 @media (max-width:600px){.loop{grid-template-columns:1fr;gap:12px}.loop-card.c3{order:3}.loop-card.c4{order:4}.loop::after{display:none}.loop-card{padding:22px 20px}}
+
+.wcard.insta:hover{transform:none;box-shadow:none}
+.wcard .ig{display:block;position:relative;margin-top:12px;padding:14px 40px 14px 16px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(213,228,190,.25);color:#eaf2e2;transition:.25s}
+.wcard .ig:hover{background:rgba(255,255,255,.16)}
+.wcard .ig b{display:block;font-size:15px;color:#fff}
+.wcard .ig span{display:block;font-size:13.5px;opacity:.85;line-height:1.55;margin-top:2px}
+.wcard .ig i{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-style:normal;font-weight:700;color:var(--sage)}
 </style>
 </head>
 <body>
@@ -602,12 +609,20 @@ footer .links a:hover{color:var(--green)}
         <p>코치의 성장 노트, 하루 독서, 마음 글쓰기. 전문코치로 배우고 성장하는 과정을 기록해요.</p>
         <span class="go">블로그 둘러보기 →</span>
       </a>
-      <a class="wcard insta reveal" href="https://www.instagram.com/remind.coaching/" target="_blank" rel="noopener">
-        <span class="kind">인스타그램</span>
-        <h3>@remind.coaching</h3>
-        <p>마음이 복잡한 날 꺼내 보기 좋은, 짧은 문장과 질문들을 나눠요.</p>
-        <span class="go">인스타그램 보기 →</span>
-      </a>
+      <div class="wcard insta reveal">
+          <span class="kind">인스타그램</span>
+          <h3>코치로, 엄마로<br>두 계정에서 만나요</h3>
+          <a class="ig" href="https://www.instagram.com/remind.coaching/" target="_blank" rel="noopener">
+            <b>@remind.coaching</b>
+            <span>코칭 이야기 · 마음이 복잡한 날 꺼내 보는 문장과 질문</span>
+            <i>→</i>
+          </a>
+          <a class="ig" href="https://www.instagram.com/maumcoach_younghee/" target="_blank" rel="noopener">
+            <b>@maumcoach_younghee</b>
+            <span>코치이자 엄마의 하루 · 읽고, 쓰고, 코칭하는 일상</span>
+            <i>→</i>
+          </a>
+        </div>
     </div>
   </div>
 </section>
@@ -638,7 +653,8 @@ footer .links a:hover{color:var(--green)}
       <a href="https://litt.ly/mindcoaching" target="_blank" rel="noopener">리틀리</a>
       <a href="https://blog.naver.com/mindcoaching_123" target="_blank" rel="noopener">네이버 블로그</a>
       <a href="https://brunch.co.kr/@nowthanks123" target="_blank" rel="noopener">브런치</a>
-      <a href="https://www.instagram.com/remind.coaching/" target="_blank" rel="noopener">인스타그램</a>
+      <a href="https://www.instagram.com/remind.coaching/" target="_blank" rel="noopener">인스타그램(코칭)</a>
+      <a href="https://www.instagram.com/maumcoach_younghee/" target="_blank" rel="noopener">인스타그램(일상)</a>
       <a href="http://pf.kakao.com/_BxjFNn" target="_blank" rel="noopener">카카오톡 채널</a>
     </div>
   </div>
